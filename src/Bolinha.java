@@ -1,4 +1,10 @@
 
 public class Bolinha {
-	int x, y;
+	char ch;
+	boolean esta_no_jogo;
+	
+	Bolinha(){
+		this.ch = 'P';
+		this.esta_no_jogo = true;
+	}
 }

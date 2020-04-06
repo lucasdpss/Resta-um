@@ -6,9 +6,15 @@ public class Main {
 		csv.setDataSource("src\\solution.csv");
 		String commands[] = csv.requestCommands();
 		
-		System.out.println("OLAAAA");
+		Tabuleiro t = new Tabuleiro();
+		
+		t.mostrar();
+		
 		for(int i=0;i < commands.length;i++) {
-			System.out.println(commands[i]);
+			System.out.println("Source: "+commands[i].charAt(0)+commands[i].charAt(1));
+			System.out.println("target: "+commands[i].charAt(3)+commands[i].charAt(4));
+			t.mover_peca(commands[i]);
+			t.mostrar();
 		}
 	}
 
