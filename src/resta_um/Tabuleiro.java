@@ -1,3 +1,4 @@
+package resta_um;
 
 public class Tabuleiro {
 	Bolinha m[][];
@@ -43,7 +44,7 @@ public class Tabuleiro {
 		int id = '7' - s.charAt(4);    //i destino
 		int jd = s.charAt(3) - 'a';    //j destino
 		
-		if(mov_valido()) {
+		if(mov_valido(ii, ji, id, jd)) {
 			m[(ii+id)/2][(ji+jd)/2] = null;
 			m[id][jd] = m[ii][ji];
 			m[ii][ji] = null;
@@ -51,7 +52,17 @@ public class Tabuleiro {
 		
 	}
 	
-	boolean mov_valido() {
-		return true;
+	boolean mov_valido(int ii, int ji, int id, int jd) {
+		if(m[ii][ji] == null) return false;
+		if(m[id][jd] != null) return false;
+		
+		//Valores absolutos das diferencas das posicoes em X e em Y:
+		int diferencaX = (id-ii>=0)?(id-ii):(ii-id);
+		int diferencaY = (jd-ji>=0)?(jd-ji):(ji-jd);
+		
+		if(diferencaX == 2 && diferencaY == 0) return true;
+		if(diferencaX == 0 && diferencaY == 2) return true;
+		
+		return false;
 	}
 }

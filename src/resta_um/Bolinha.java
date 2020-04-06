@@ -1,3 +1,4 @@
+package resta_um;
 
 public class Bolinha {
 	char ch;
