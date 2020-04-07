@@ -1,2 +1,10 @@
 # Resta-um
-O Resta Um (Peg Solitaire em inglês) é um jogo antigo cujo primeiro registro é de 1687. Ele é constituído de um tabuleiro em formato de cruz com todas as casas preenchidas por pedras, exceto a do meio.Trata-se um jogo para se jogar sozinho. Em cada movimento do jogo, cada peça pode “come” outra pulando-a (no mesmo estilo do jogo de damas). Tal como na dama, o pulo só pode acontecer se do outro lado houver um espaço vago; a peça comida desaparece. O único movimento permitido é esse de “comer” e ele só pode ser realizado nas quatro direções: cima, baixo, direita e esquerda; não são permitidos movimentos diagonais.  O desafio final é só deixar uma única pedra no tabuleiro. O risco é que alguma pedra fique sem nenhum vizinho pois, nesse caso, ela não poderá se mover.
+  Trabalho MC322
+  
+  -Lucas de Paula Soares RA:201867
+  -Antonio Gabriel da Silva Fernandes RA:231551
+  
+  
+  Na pasta /src há o "solution.csv", arquivo utilizado para determinar o movimento das peças.
+  As classes estão no pacote "resta_um"
+  
