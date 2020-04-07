@@ -1,11 +1,9 @@
 package resta_um;
 
 public class Bolinha {
-	char ch;
-	boolean esta_no_jogo;
+	private char caractere = 'P';
 	
-	Bolinha(){
-		this.ch = 'P';
-		this.esta_no_jogo = true;
+	public char getCaractere(){
+		return caractere;
 	}
 }
